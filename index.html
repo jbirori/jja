@@ -8,23 +8,26 @@
   </head>
   <body>
     <!-- Splash Page -->
-    <div id="splash"></div>
+    <div class="section" id="splash"></div>
     <!-- First testimonial page -->
-    <div id="test-1">First</div>
+    <div class="section" id="test-1"><img src="assets/gaju-jeff.jpg" class="test-backgrounds" /></div>
     <!-- Second testimonial page -->
-    <div id="test-2">Second</div>
+    <div class="section" id="test-2">Second</div>
     <!-- Third testimonial page -->
-    <div id="test-3">Third</div>
+    <div class="section" id="test-3">Third</div>
     <!-- About Page -->
-    <div id="about">About</div>
+    <div class="section" id="about">About</div>
 
     <!-- Site navigation bar -->
+    <a href="#splash"><img id="logo" src="assets/jja-logo.png" /></a>
     <div id="nav-guide">
-      <img id="logo" src="assets/jja-logo.png" />
-      <div class="nav-indicator"></div>
-      <div class="nav-indicator"></div>
-      <div class="nav-indicator"></div>
-      <div class="nav-indicator"></div>
+      <a href="#test-1"><div class="nav-indicator"></div></a>
+      <a href="#test-2"><div class="nav-indicator" ></div></a>
+      <a href="#test-3"><div class="nav-indicator" ></div></a>
+      <a href="#about"><div class="nav-indicator" ><img id="info-icon" src="assets/info-white.png" /></div></a>
     </div>
+
+    <!-- Javascript stuff -->
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

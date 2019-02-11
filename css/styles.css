@@ -1,43 +1,80 @@
 html {
   background-color: black;
   color: white;
+  -webkit-overflow-scrolling: auto;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
 }
 
 /* Splash page styling */
 #splash {
-  min-height: 100vh;
+  height: 100vh;
 }
 
+/* ######################## Anything to do with testimonial stylings ######################## */
 /* First Testimonial page styling */
 #test-1 {
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 /* Second testimonial page styling */
 #test-2 {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 /* Third testimonial page styling */
 #test-3 {
-  min-height: 100vh;
+  height: 100vh;
+}
+
+.test-backgrounds {
+  position: absolute;
+  width: 100%;
+  transform: translateY(-15%);
 }
 
 /* About page styling */
 #about {
-  min-height: 100vh;
+  height: 100vh;
 }
 
+/* ######################## Anything to do with nav stylings ######################## */
 /* Site navigaton bar styles */
 #nav-guide {
   position: fixed;
   top: 50%;
-  transform: translateY(-50%);
+  margin-left: 35px;
 }
 
+/* Navigaton indicator styles */
 .nav-indicator {
   width: 35px;
   height: 35px;
   border-radius: 100%;
   border: 1px solid white;
+  margin-top: 10px;
+}
+
+.nav-indicator:hover {
+  cursor: pointer;
+}
+
+#logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#info-icon {
+  width: 11px;
+  position: relative;
+  left: 48%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
